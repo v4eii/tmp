@@ -453,6 +453,11 @@ spec:
                 configMapKeyRef:
                   name: urls-config
                   key: D_READ_TIMEOUT
+            - name: D_APP_HOST
+              valueFrom:
+                configMapKeyRef:
+                  name: urls-config
+                  key: D_APP_HOST
           ports:
             - containerPort: 8080
 
